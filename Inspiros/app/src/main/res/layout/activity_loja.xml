@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_loja"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.inspiros.LojaActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp">
+
+        <RadioButton
+            android:text="Garoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton7"
+            android:layout_weight="1"
+            android:onClick="changeGenderM"/>
+
+        <RadioButton
+            android:text="Garota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton6"
+            android:layout_weight="1"
+            android:onClick="changeGenderF" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="Customizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Selecione"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:id="@+id/textView10"
+        android:layout_marginTop="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:text="Hair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView11"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="Raven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/checkBox8"
+        android:onClick="changeHairR"/>
+
+    <RadioButton
+        android:text="Aurelia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox9"
+        android:layout_alignBaseline="@+id/checkBox8"
+        android:layout_alignBottom="@+id/checkBox8"
+        android:layout_toRightOf="@+id/checkBox7"
+        android:layout_toEndOf="@+id/checkBox7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="changeHairA" />
+
+    <RadioButton
+        android:text="Fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox7"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignRight="@+id/checkBox8"
+        android:layout_alignEnd="@+id/checkBox8"
+        android:onClick="changeHairF" />
+
+    <TextView
+        android:text="Eyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox8"
+        android:layout_alignLeft="@+id/checkBox8"
+        android:layout_alignStart="@+id/checkBox8"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <RadioButton
+        android:text="Ruby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginTop="14dp"
+        android:id="@+id/checkBox11"
+        android:onClick="changeEyesR" />
+
+
+
+
+
+    <RadioButton
+        android:text="Aqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox10"
+        android:layout_above="@+id/checkBox11"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:onClick="changeEyesA" />
+
+    <RadioButton
+        android:text="Stone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox12"
+        android:layout_alignBaseline="@+id/checkBox11"
+        android:layout_alignBottom="@+id/checkBox11"
+        android:layout_toRightOf="@+id/checkBox7"
+        android:layout_toEndOf="@+id/checkBox7"
+        android:onClick="changeEyesS" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Troque o nome"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/checkBox12"
+        android:layout_toRightOf="@+id/checkBox9"
+        android:layout_toEndOf="@+id/checkBox9" />
+
+    <Button
+        android:text="Trocar!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:elevation="0dp"
+        android:onClick="changeName"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cavaleiro"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/checkBox7"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <RadioGroup
+        android:id="@+id/grupo1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/checkBox12"
+        android:layout_alignEnd="@+id/checkBox12"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:text="Caçador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton13"
+            android:layout_weight="1"
+            android:onClick="changeClothesC" />
+
+        <RadioButton
+            android:text="Guerreiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton14"
+            android:layout_weight="1"
+            android:onClick="changeClothesGo" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/grupo2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/checkBox12"
+        android:layout_alignEnd="@+id/checkBox12"
+        android:visibility="visible" >
+
+        <RadioButton
+            android:text="Guerreira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton15"
+            android:layout_weight="1"
+            android:onClick="changeClothesGa"
+            />
+
+        <RadioButton
+            android:text="Princesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton16"
+            android:layout_weight="1"
+            android:onClick="changeClothesP" />
+    </RadioGroup>
+
+
+</RelativeLayout>
+
+

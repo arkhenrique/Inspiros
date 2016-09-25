@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dragon_hold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.inspiros.DragonHold">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/hold"
+        android:text="Clique no baú"
+        android:textSize="30sp"
+        android:paddingTop="16dp" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="0dp"
+        android:layout_alignBottom="@+id/activity_dragon_hold">
+
+        <ImageView
+            android:src="@drawable/dragon"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/dragon"
+            android:layout_height="240dp"
+            android:layout_width="180dp"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="12dp"
+            android:translationY="20dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:translationY="50dp">
+
+        <ImageView
+            android:src="@drawable/traseure_box"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/treasure"
+            android:layout_height="213dp"
+            android:layout_width="245dp"
+            android:paddingRight="16dp"
+            android:translationZ="1dp" />
+
+        <ImageView
+            android:src="@drawable/moedas"
+            android:layout_gravity="center"
+            android:id="@+id/coins"
+            android:layout_height="81dp"
+            android:layout_width="171dp"
+            android:paddingRight="16dp" />
+
+    </FrameLayout>
+</RelativeLayout>

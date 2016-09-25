@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passos para atingir a meta:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:id="@+id/textView" />
+
+    <TextView android:id="@+id/count"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+    <Button
+        android:text="Pegue"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/toggleButton"
+        android:onClick="getCoin1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp" />
+
+    <TextView
+        android:text="Você ganhou 20 moedas!!"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:fontFamily="sans-serif"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:layout_above="@+id/toggleButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
